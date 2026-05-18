@@ -1,0 +1,20 @@
+{
+  "name": "restfull",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/brunaguimaraes-eng/Restfull#readme",
+  "bugs": {
+    "url": "https://github.com/brunaguimaraes-eng/Restfull/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunaguimaraes-eng/Restfull.git"
+  },
+  "license": "ISC",
+  "author": "Bruna",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
