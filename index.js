@@ -10,10 +10,25 @@ let server = http.createServer((req, res) => {
         case'/':
 
             res.statusCode = 200;
-            res.setHeader('Content-Type', 'text/html'):
-            res.end(<h1>Olá</h1>);
+            res.setHeader('Content-Type', 'text/html');
+            res.end('<h1>Olá</h1>');
 
-            break;
+        break;
+
+        case '/users':
+
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.end(JSON.stringify({
+                users: [{
+                    name:'Bru',
+                    email:'bruna@saipos.com',
+                    id:1
+                }]
+            }));
+
+        break;
+        
 
     }
 });
