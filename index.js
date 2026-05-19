@@ -2,9 +2,11 @@ const express = require('express'); //framework que cria o servidor
 const consign = require('consign'); //lê a pasta de rotas
 const bodyParser = require('body-parser'); // converte os dados de formulário para um formato que o js entenda, ex: JSON
 
-//contorno do erro de versão do nedb.
+//contorno do erro de versão do nedb, busca nova versão.
 const util = require('util');
 util.isDate = util.types.isDate;
+util.isArray = Array.isArray;
+util.isRegExp = util.types.isRegExp; 
 
 let app = express(); // inicia o express
 
