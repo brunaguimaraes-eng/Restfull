@@ -12,7 +12,7 @@ let app = express(); // inicia o express
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
-consign().include('routes').into(app); //pega tudo que está na pasta routes e inclui dentro do app
+consign().include('routes').include('utils').into(app); //pega tudo que está na pasta routes e inclui dentro do app
 
 app.listen(3000, '127.0.0.1', () => {
 
